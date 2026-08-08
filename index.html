@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Surprise For Ujuu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="birthdayMusic" src="music/birthday.mp3" preload="auto"></audio>
+<audio id="galleryMusic" src="music/gallery.mp3" preload="auto"></audio>
+
+<div id="intro" class="screen intro-screen">
+  <div class="intro-message">Thank you for spending your time</div>
+  <div class="intro-line"></div>
+</div>
+
+<div id="reveal" class="screen reveal-screen hidden">
+  <div class="glow-orb"></div>
+  <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+  <h1>Tap to <em>reveal</em></h1>
+  <button id="revealBtn" class="gold-btn">REVEAL ✦</button>
+</div>
+
+<main id="experience" class="hidden">
+
+<section class="note-section">
+  <p class="eyebrow">A SMALL NOTE FOR YOU</p>
+  <h2>A little note,<br><em>folded with love.</em></h2>
+
+  <div id="note" class="royal-note">
+    <div class="note-paper">
+      <div class="wax-seal">U</div>
+      <p class="note-to">Dear Ujuu,</p>
+      <p id="letter"></p>
+      <p class="note-sign">With love,<br><span>Revi</span></p>
+    </div>
+    <div class="note-fold"></div>
+  </div>
+  <button id="openNote" class="small-btn">OPEN THE NOTE</button>
+</section>
+
+<section class="rose-section">
+  <div class="rose-stage">
+    <p class="eyebrow">JUST FOR YOU</p>
+    <h2>Some roses,<br><em>because you deserve them.</em></h2>
+    <div id="roseBouquet" class="bouquet">
+      <div class="rose r1">🌹</div><div class="rose r2">🌹</div><div class="rose r3">🌹</div>
+      <div class="rose r4">🌹</div><div class="rose r5">🌹</div>
+      <div class="stems"></div>
+    </div>
+    <button id="roseBtn" class="small-btn">ACCEPT THE ROSES 🌹</button>
+  </div>
+</section>
+
+<section class="cake-section">
+  <div class="cake-wrap">
+    <p class="eyebrow">THE MOMENT WE'VE BEEN WAITING FOR</p>
+    <h2>Make a wish,<br><em>Ujuu.</em></h2>
+    <div id="cake" class="cake">
+      <div class="cake-top"></div>
+      <div class="cake-body"></div>
+      <div class="cream cream1"></div><div class="cream cream2"></div>
+      <div class="candle"><span class="flame"></span></div>
+      <div class="candle c2"><span class="flame"></span></div>
+      <div class="candle c3"><span class="flame"></span></div>
+    </div>
+    <button id="cutCake" class="gold-btn">CUT THE CAKE ✦</button>
+    <p id="cakeMessage" class="cake-message">Make your wish first...</p>
+  </div>
+</section>
+
+<section id="birthday" class="birthday-section hidden">
+  <div class="confetti-layer"></div>
+  <div class="birthday-copy">
+    <p class="eyebrow">TODAY IS YOUR DAY</p>
+    <h2>Happy Birthday</h2>
+    <h1>Ujuu</h1>
+    <p class="sub">May this year bring you more reasons to smile.</p>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="gallery-head">
+    <div>
+      <p class="eyebrow">IT'S NOT OVER</p>
+      <h2>Our little<br><em>memories.</em></h2>
+    </div>
+    <p>Ten moments. One little story.<br>Keep them close.</p>
+  </div>
+
+  <div id="gallery" class="gallery">
+    <!-- Add your 10 photos as images/photo1.jpg ... photo10.jpg -->
+    <div class="gallery-card active"><img src="images/photo1.jpg" alt="Memory 1"><span>01</span></div>
+    <div class="gallery-card"><img src="images/photo2.jpg" alt="Memory 2"><span>02</span></div>
+    <div class="gallery-card"><img src="images/photo3.jpg" alt="Memory 3"><span>03</span></div>
+    <div class="gallery-card"><img src="images/photo4.jpg" alt="Memory 4"><span>04</span></div>
+    <div class="gallery-card"><img src="images/photo5.jpg" alt="Memory 5"><span>05</span></div>
+    <div class="gallery-card"><img src="images/photo6.jpg" alt="Memory 6"><span>06</span></div>
+    <div class="gallery-card"><img src="images/photo7.jpg" alt="Memory 7"><span>07</span></div>
+    <div class="gallery-card"><img src="images/photo8.jpg" alt="Memory 8"><span>08</span></div>
+    <div class="gallery-card"><img src="images/photo9.jpg" alt="Memory 9"><span>09</span></div>
+    <div class="gallery-card"><img src="images/photo10.jpg" alt="Memory 10"><span>10</span></div>
+  </div>
+
+  <div class="gallery-controls">
+    <button id="galleryPrev">←</button>
+    <div id="galleryCounter">01 / 10</div>
+    <button id="galleryNext">→</button>
+  </div>
+</section>
+
+<section class="final-section">
+  <div class="final-glow"></div>
+  <p class="eyebrow">ONE LAST THING</p>
+  <h2>Hope our bond<br><em>remains forever.</em></h2>
+  <div class="gold-line"></div>
+  <p class="final-birthday">Once again,<br><strong>Happy Birthday to the prettiest one.</strong> ❤️</p>
+  <p class="signature">— Revi 😉</p>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
