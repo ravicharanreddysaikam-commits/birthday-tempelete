@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Royal Surprise For Ujuu 👑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="particles"></canvas>
+<div class="gold-dust"></div>
+
+<section class="scene opening" id="opening">
+  <div class="opening-content">
+    <div class="crest">✦</div>
+    <p class="micro">A PRIVATE CELEBRATION</p>
+    <h1>A Special Night</h1>
+    <div class="gold-line"></div>
+    <p class="opening-sub">Someone very special deserves a surprise.</p>
+    <button class="royal-btn" id="beginBtn">ENTER THE EXPERIENCE</button>
+  </div>
+</section>
+
+<section class="scene vault hidden" id="vault">
+  <div class="vault-card">
+    <div class="ring">♔</div>
+    <p class="micro gold">ROYAL VAULT</p>
+    <h2>A secret awaits...</h2>
+    <p class="muted">Enter the password to unlock your surprise.</p>
+    <div class="password-wrap">
+      <input id="password" type="password" placeholder="PASSWORD">
+      <button id="unlockBtn">UNLOCK</button>
+    </div>
+    <p class="error" id="error"></p>
+  </div>
+</section>
+
+<section class="scene reveal hidden" id="reveal">
+  <div>
+    <p class="script">A surprise for</p>
+    <h2 id="heroName">Ujuu</h2>
+    <div class="gold-line"></div>
+    <p class="micro">WITH LOVE · WITH MEMORIES · WITH MAGIC</p>
+    <button class="scroll-btn" data-target="letter">CONTINUE ↓</button>
+  </div>
+</section>
+
+<section class="scene letter-scene" id="letter">
+  <div class="envelope" id="envelope">
+    <div class="envelope-back"></div>
+    <div class="letter-paper">
+      <div class="wax">U</div>
+      <h2>For <span id="letterName"></span></h2>
+      <p id="letterText"></p>
+      <p class="signature">— Revi</p>
+    </div>
+    <div class="envelope-flap"></div>
+    <div class="envelope-front"></div>
+  </div>
+  <p class="tap-hint">CLICK THE ENVELOPE</p>
+</section>
+
+<section class="scene memories" id="memories">
+  <div class="section-title">
+    <p class="micro gold">THE MEMORIES</p>
+    <h2>Moments worth keeping.</h2>
+  </div>
+  <div class="memory-stage">
+    <button class="gallery-arrow prev" id="prev">‹</button>
+    <div class="memory-card" id="memoryCard">
+      <img id="memoryImage" src="photos/photo1.jpg" alt="Memory" onerror="this.style.display='none';document.getElementById('photoFallback').style.display='flex'">
+      <div id="photoFallback">PHOTO 01<br><small>Add your image to photos/photo1.jpg</small></div>
+      <div class="memory-caption"><span id="memoryNo">01</span><b id="memoryCaption">A beautiful memory</b></div>
+    </div>
+    <button class="gallery-arrow next" id="next">›</button>
+  </div>
+  <div class="memory-dots" id="memoryDots"></div>
+  <p class="swipe-note">Swipe on mobile · Click arrows on desktop</p>
+</section>
+
+<section class="scene gift-scene" id="giftScene">
+  <div>
+    <p class="micro gold">ONE FINAL GIFT</p>
+    <h2>Something special<br>for someone special.</h2>
+    <div class="royal-gift" id="gift">
+      <div class="gift-glow"></div>
+      <div class="gift-lid"></div>
+      <div class="gift-body"></div>
+      <div class="gift-ribbon-v"></div>
+      <div class="gift-ribbon-h"></div>
+      <span class="gift-spark s1">✦</span><span class="gift-spark s2">✧</span><span class="gift-spark s3">✦</span><span class="gift-spark s4">✧</span>
+    </div>
+    <p class="tap-hint">CLICK TO OPEN</p>
+  </div>
+</section>
+
+<section class="scene final" id="final">
+  <canvas id="fireworks"></canvas>
+  <div class="final-content">
+    <p class="micro gold">TONIGHT, WE CELEBRATE YOU</p>
+    <h2>Happy Birthday</h2>
+    <h1 id="finalName">Ujuu</h1>
+    <div class="gold-line"></div>
+    <p class="final-message">May every chapter ahead be more beautiful than the last.</p>
+    <p class="made">Made With <span>♥</span> By Revi 😉</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
