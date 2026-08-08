@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little Surprise For Ujuu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="birthdayMusic" src="music/birthday.mp3" preload="auto"></audio>
+<audio id="galleryMusic" src="music/gallery.mp3" preload="auto"></audio>
+
+<section id="intro" class="full-screen intro">
+  <div class="intro-inner">
+    <p class="eyebrow">A PRIVATE LITTLE MOMENT</p>
+    <h1>Thank you for<br>spending your time.</h1>
+    <div class="gold-rule"></div>
+  </div>
+</section>
+
+<section id="reveal" class="full-screen reveal hidden">
+  <div class="red-glow"></div>
+  <p class="eyebrow">SOMETHING MADE JUST FOR YOU</p>
+  <h1>Tap to <em>reveal</em></h1>
+  <button id="revealBtn" class="gold-btn">TAP TO REVEAL</button>
+</section>
+
+<main id="experience" class="hidden">
+
+<section class="note-section">
+  <p class="eyebrow">A SMALL NOTE FOR YOU</p>
+  <h2>Written like a letter<br><em>from another time.</em></h2>
+
+  <div id="scroll" class="royal-scroll">
+    <div class="gold-rod top-rod">
+      <span class="rod-cap left"></span><span class="rod-cap right"></span>
+    </div>
+
+    <div class="parchment">
+      <div class="parchment-glow"></div>
+      <div class="wax-seal">U</div>
+      <div class="letter-content">
+        <p class="letter-date">A little letter, especially for you</p>
+        <p class="letter-to">Dear Ujuu,</p>
+        <p id="letterText"></p>
+        <p class="letter-sign">With love,<br><span>Revi</span></p>
+      </div>
+    </div>
+
+    <div class="gold-rod bottom-rod">
+      <span class="rod-cap left"></span><span class="rod-cap right"></span>
+    </div>
+  </div>
+
+  <button id="openScroll" class="small-btn">UNROLL THE LETTER</button>
+</section>
+
+<section class="rose-section">
+  <div class="rose-heading">
+    <p class="eyebrow">JUST FOR YOU</p>
+    <h2>A rose for you,<br><em>in the most old-fashioned way.</em></h2>
+    <p class="rose-sub">Watch carefully...</p>
+  </div>
+
+  <div id="roseStage" class="rose-stage">
+    <div class="soft-spot"></div>
+
+    <div id="bouquet" class="bouquet">
+      <div class="stem s-a"></div><div class="stem s-b"></div><div class="stem s-c"></div>
+      <div class="leaf l-a"></div><div class="leaf l-b"></div><div class="leaf l-c"></div>
+      <div class="rose-flower rf-a"><i></i><b></b></div>
+      <div class="rose-flower rf-b"><i></i><b></b></div>
+      <div class="rose-flower rf-c"><i></i><b></b></div>
+      <div class="rose-flower rf-d"><i></i><b></b></div>
+      <div class="rose-flower rf-e"><i></i><b></b></div>
+      <div class="paper-wrap"></div>
+      <div class="ribbon"></div>
+    </div>
+
+    <div class="giver-arm">
+      <div class="sleeve"></div>
+      <div class="hand">
+        <span class="finger f1"></span><span class="finger f2"></span>
+        <span class="finger f3"></span><span class="thumb"></span>
+      </div>
+    </div>
+  </div>
+
+  <button id="giveRoses" class="small-btn">GIVE HER THE ROSES</button>
+  <p id="roseMessage" class="rose-message">A little gesture, just for her.</p>
+</section>
+
+<section class="cake-section">
+  <div class="cake-content">
+    <p class="eyebrow">THE BIRTHDAY MOMENT</p>
+    <h2>Make a wish,<br><em>Ujuu.</em></h2>
+
+    <div id="cake" class="cake">
+      <div class="cake-shadow"></div>
+      <div class="cake-base"></div>
+      <div class="cake-cream"></div>
+      <div class="candle one"><span></span></div>
+      <div class="candle two"><span></span></div>
+      <div class="candle three"><span></span></div>
+      <div class="cake-plate"></div>
+    </div>
+
+    <button id="cutCake" class="gold-btn dark-btn">CUT THE CAKE</button>
+    <p id="cakeMessage" class="cake-message">Close your eyes and make a wish.</p>
+  </div>
+</section>
+
+<section id="birthday" class="birthday-section hidden">
+  <div class="birthday-glow"></div>
+  <div class="birthday-content">
+    <p class="eyebrow">TODAY IS YOUR DAY</p>
+    <h2>Happy Birthday</h2>
+    <h1>Ujuu</h1>
+    <p>For the smile, the memories and everything that makes you — you.</p>
+  </div>
+  <div id="confetti"></div>
+</section>
+
+<section class="gallery-section">
+  <div class="gallery-title">
+    <div>
+      <p class="eyebrow">IT'S NOT OVER</p>
+      <h2>Our little<br><em>gallery.</em></h2>
+    </div>
+    <p>Ten photographs.<br>Ten little pieces of a story.</p>
+  </div>
+
+  <div id="gallery" class="gallery">
+    <div class="gallery-card active"><img src="images/photo1.jpg"><span>01</span></div>
+    <div class="gallery-card"><img src="images/photo2.jpg"><span>02</span></div>
+    <div class="gallery-card"><img src="images/photo3.jpg"><span>03</span></div>
+    <div class="gallery-card"><img src="images/photo4.jpg"><span>04</span></div>
+    <div class="gallery-card"><img src="images/photo5.jpg"><span>05</span></div>
+    <div class="gallery-card"><img src="images/photo6.jpg"><span>06</span></div>
+    <div class="gallery-card"><img src="images/photo7.jpg"><span>07</span></div>
+    <div class="gallery-card"><img src="images/photo8.jpg"><span>08</span></div>
+    <div class="gallery-card"><img src="images/photo9.jpg"><span>09</span></div>
+    <div class="gallery-card"><img src="images/photo10.jpg"><span>10</span></div>
+  </div>
+
+  <div class="gallery-controls">
+    <button id="galleryPrev">←</button>
+    <span id="galleryCounter">01 / 10</span>
+    <button id="galleryNext">→</button>
+  </div>
+</section>
+
+<section class="final-section">
+  <div class="final-halo"></div>
+  <p class="eyebrow">ONE LAST THING</p>
+  <h2>Hope our bond<br><em>remains forever.</em></h2>
+  <div class="gold-rule"></div>
+  <p class="final-line">Once again,<br><strong>Happy Birthday to the prettiest one.</strong> ❤️</p>
+  <p class="signature">— Revi 😉</p>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
